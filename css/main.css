@@ -1,0 +1,404 @@
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", sans-serif;
+  color: rgb(71, 76, 72);
+}
+
+header {
+  background-image: url("../img/heroimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  height: 100vh;
+  margin: 8px;
+}
+
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+}
+.navbar .container {
+  display: flex;
+  justify-content: right;
+  padding-top: 20px;
+}
+.navbar nav {
+  display: none;
+}
+
+.logo {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 22em;
+  line-height: 0.3;
+}
+.hero h1 {
+  font-size: 4em;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+}
+.hero p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+section.articles {
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+}
+section.articles h4 {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 5em;
+}
+section.articles .container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+section.articles ul {
+  list-style: none;
+}
+section.articles ul li {
+  background: white;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto 5em;
+  padding-bottom: 2em;
+  box-shadow: 0 7px 15px black;
+}
+section.articles ul li img {
+  height: 230px;
+  width: 100%;
+  margin-top: -2em;
+  margin-right: -2em;
+  margin-left: -2em;
+}
+
+section.about .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: justify;
+  justify-content: center;
+  position: relative;
+  top: 0;
+}
+section.about .container h2 {
+  text-align: center;
+}
+section.about .container p {
+  padding: 2em;
+  text-align: center;
+}
+section.about img {
+  width: 100%;
+  height: auto;
+}
+
+section.subscribe {
+  background: rgb(225, 230, 224);
+  text-align: center;
+  height: 35em;
+}
+section.subscribe .container {
+  display: block;
+  font-size: 1.2em;
+  line-height: 0.1em;
+  padding-top: 5em;
+}
+section.subscribe h2 {
+  font-size: 2em;
+  font-weight: 300;
+  padding: 1em;
+}
+section.subscribe p {
+  font-size: 1.2em;
+  padding-top: -5em;
+}
+
+input {
+  width: 90%;
+  padding: 1em;
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 1em;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  background: rgb(225, 230, 224);
+  height: 44px;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  color: rgb(71, 76, 72);
+  margin-bottom: 3em;
+  display: inline-block;
+  padding: 0.4em 2em;
+  width: 90%;
+  border: 2px solid rgb(71, 76, 72);
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background: gray;
+  color: white;
+}
+
+section.endbar .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.endbar .container .ww {
+  position: relative;
+}
+section.endbar .container .ww ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  padding: 2em;
+}
+section.endbar .container .ww ul li {
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  padding: 1em;
+}
+section.endbar .container .icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+section.endbar .container .icons a {
+  background-color: rgb(71, 76, 72);
+  font-size: 0.8rem;
+  margin: 0 3px;
+  padding: 7px 10px;
+  border-radius: 50%;
+  color: rgb(225, 230, 224);
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 70%;
+  right: 0;
+  top: 0;
+  background: rgb(71, 76, 72);
+  height: 100vh;
+  padding: 1em;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 2em;
+  text-align: right;
+  padding: 1em;
+}
+nav li a:hover {
+  font-weight: bold;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu-exit, .mobile-menu {
+    display: none;
+  }
+  .logo {
+    display: block;
+    font-size: 1.7em;
+    font-weight: 500;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: flex-end;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav ul li {
+    list-style: none;
+    font-size: 1.3em;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    margin-right: -0.7em;
+    padding-left: 1em;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.subscribe a {
+    color: rgb(71, 76, 72);
+    border: 2px solid rgb(71, 76, 72);
+    font-weight: 300;
+  }
+  .navbar nav li.subscribe a:hover {
+    background: rgb(71, 76, 72);
+    color: white;
+  }
+  .hero {
+    height: 25em;
+  }
+  .hero h1 {
+    font-size: 5em;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+  }
+  .hero p {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  section.about .container {
+    justify-content: left;
+    position: relative;
+    top: 0;
+    margin: 0;
+    flex-direction: row;
+    width: 100%;
+  }
+  section.about .container .col-left {
+    align-items: flex-start;
+    width: 250%;
+  }
+  section.about .container .right-col {
+    padding-left: 2em;
+    margin-top: -10em;
+  }
+  section.about .container .right-col h2 {
+    text-align: center;
+  }
+  section.about .container .right-col p {
+    width: 80%;
+    padding-left: 2em;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .articles ul {
+    display: flex;
+    gap: 3em;
+  }
+  section.articles {
+    width: auto;
+    height: 800px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080;
+    margin: 0 auto;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .articles ul {
+    display: flex;
+    gap: 3em;
+  }
+  section.articles {
+    width: auto;
+    height: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .navbar nav {
+    padding: 1em;
+  }
+  .navbar nav a {
+    padding: 0.2em 1em;
+  }
+  .navbar nav li.subscribe a {
+    margin-top: -1em;
+  }
+  .subscribe {
+    position: relative;
+    padding: 15px;
+  }
+  .subscribe .container {
+    display: flex;
+  }
+  .subscribe input {
+    width: 72%;
+  }
+  .subscribe input[type=submit] {
+    width: 40%;
+  }
+  .articles .container li {
+    margin: 0 auto 5em;
+    padding-bottom: 5em;
+  }
+  .articles .container li blockquote {
+    font-size: 1.2em;
+    color: #333;
+    padding: 1em 1em auto;
+    margin-top: 2em;
+  }
+  section.about {
+    padding: 0;
+  }
+  section.about .container .col-left {
+    width: 150%;
+  }
+  section.endbar {
+    padding: 0;
+  }
+  section.endbar .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  section.endbar .container .ww ul {
+    display: flex;
+    flex-direction: row;
+  }
+  section.endbar .container .icons {
+    padding-left: 1em;
+  }
+}/*# sourceMappingURL=main.css.map */

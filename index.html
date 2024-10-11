@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lombok</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo">LK</a>
+            
+                <img id="mobile-cta" class="mobile-menu" src="img/menu.svg" alt="Open navigation">
+
+                <nav>
+                    <img id="exit-cta" class="mobile-menu-exit" src="img/exit.svg" alt="menu exit">
+                    <ul class="primary-nav">     
+                        <li><a href="#about-cta">About</a></li>
+                        <li><a href="#articles-cta">Articles</a></li>
+                        <li class="subscribe"><a href="#subscribe-cta">Subscribe</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    
+        <div class="hero">
+            <h1>LOMBOK</h1>
+            <p>Holistic Health &amp; More</p>
+            <!-- <img class="hero-img" src="img/heroimg.jpg" alt="hero image"> -->
+        </div>
+    </header>
+
+    <section id="articles-cta" class="articles">
+        <div class="container">
+            <h4>LATEST ARTICLES</h4>
+            <ul>
+                <li>
+                    <img src="img/img01.jpg" alt="1">
+                    <blockquote>How to use mindfulness in your everyday life</blockquote>
+                </li>
+                <li>
+                    <img src="img/img02.jpg" alt="2">
+                    <blockquote>What are the best walking meditations</blockquote>
+                </li>
+                <li>
+                    <img src="img/img03.jpg" alt="3">
+                    <blockquote>How to go deep into the mind of hope</blockquote>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="about-cta" class="about">
+        <div class="container">
+            <div class="col-left">
+                <img src="img/imgabout.jpg" alt="about">
+            </div>
+            <div class="right-col">
+                <h2>About</h2>
+                <p>Call Me Oil is a blog from the earliest years. Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde possimus nobis ipsum ullam reprehenderit quia aut repudiandae numquam enim ipsa officia quasi est, sint perferendis fugit beatae? Deleniti, rerum. Quia.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="subscribe-cta" class="subscribe">
+        <div class="container">
+            <h2>Subscribe</h2>
+            <p>Sign-up to our newsletter</p>
+            <form action="">
+                <input type="email" id="email" name="email" placeholder="Your email">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </section>
+
+    <section class="endbar">
+        <div class="container">
+            <div class="icons">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-pinterest"></i></a>
+            </div>
+
+            <div class="ww">
+                <ul>
+                    <li>ABOUT</li>
+                    <li>ARTICLES</li>
+                    <li>SUBSCRIBE</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const  mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnExit = document.getElementById('exit-cta');
+        
+        mobileBtn.addEventListener('click', ()=>{
+            nav.classList.add('menu-btn')
+        });
+        mobileBtnExit.addEventListener('click', ()=>{
+            nav.classList.remove('menu-btn')
+        });
+
+
+    </script>
+    
+    
+</body>
+</html>
